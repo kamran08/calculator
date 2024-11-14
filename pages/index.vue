@@ -12,18 +12,18 @@
               <div class="_home_search">
                 <div class="_home_search_top">
                   <ul class="_home_search_top_list">
-                    <li><span class="_home_search_top_list_span">Calculate your tax Now (Yearly)</span></li>
+                    <li><span class="_home_search_top_list_span">Calculate your tax Now </span></li>
 
-                   <!--   <li>
-                      <RadioGroup>
-                        <Radio label="oneWay">
-                            <span>One Way</span>
+                     <li>
+                      <RadioGroup v-model="type">
+                        <Radio label="Yearly">
+                            <span>Yearly</span>
                         </Radio>
-                        <Radio label="return">
-                            <span>Return</span>
+                        <Radio label="Monthly">
+                            <span>Monthly</span>
                         </Radio>
                     </RadioGroup>
-                    </li> -->
+                    </li>
                   </ul>
                 </div>
 
@@ -32,7 +32,7 @@
                     <div class="col-12 col-md">
                       <div class="_home_search_imput">
                          <template>
-                          <input type="number" v-model="total_earning" />
+                          <input type="number" v-model="total" />
                       </template>
                       </div>
                     </div>
@@ -94,7 +94,9 @@ export default {
       data(){
         return{
             total_earning:0.00,
-            total_tax:0.00
+            total_tax:0.00,
+            total:0.00,
+            type:''
         }
     },
 
@@ -107,8 +109,24 @@ components: {
 
 methods:{
   calculate(){
-    this.total_tax = 0.00
-    let tax_percentage = 20
+    this.total_earning =0.00
+    console.log(this.type)
+    if(!this.type || this.type=='') 
+      {
+        this.i("please select Montly or Yearly type")
+        return
+      }
+      this.total_tax = 0.00
+      let tax_percentage = 20
+    if(this.type=='Yearly'){
+      this.total_earning = total
+    
+    }
+    else{
+     
+      this.total_earning =( this.total *12)
+
+    }
     if(this.total_earning<=12570){
       return
     }
@@ -122,12 +140,8 @@ methods:{
     }
 
     this.total_tax = (tax_percentage * (this.total_earning -12570))/100
-
-    
-      
-
    
-    
+
 
   },
  
