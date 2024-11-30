@@ -12,15 +12,15 @@
               <div class="_home_search">
                 <div class="_home_search_top">
                   <ul class="_home_search_top_list">
-                    <li><span class="_home_search_top_list_span">Calculate your tax Now </span></li>
+                    <li><span class="_home_search_top_list_span">Calculate your tax Now (Monthly)</span></li>
 
                      <li>
-                      <RadioGroup v-model="type">
-                        <Radio label="Yearly">
-                            <span>Yearly</span>
+                      <RadioGroup>
+                        <Radio label="oneWay">
+                            <span>One Way</span>
                         </Radio>
-                        <Radio label="Monthly">
-                            <span>Monthly</span>
+                        <Radio label="return">
+                            <span>Return</span>
                         </Radio>
                     </RadioGroup>
                     </li>
@@ -32,7 +32,7 @@
                     <div class="col-12 col-md">
                       <div class="_home_search_imput">
                          <template>
-                          <input type="number" v-model="total" />
+                          <input type="number" />
                       </template>
                       </div>
                     </div>
@@ -48,7 +48,7 @@
                     </div>
                     <div class="col-12 col-md">
                      <div class="_home_search_imput">
-                     <span class="_home_search_top_list_span"> Total payable tax amount: {{ total_tax }}</span>
+                     <span class="_home_search_top_list_span"> Total payable tax amount: </span>
                      <span class="_home_search_top_list_span"> </span>
                         
                        <!--   <DatePicker v-model="searchData.pick_up_date" type="date" placeholder="Date" style="width: 100%" /> -->
@@ -93,10 +93,7 @@ import mainFooter from "~/components/main/footer.vue";
 export default {
       data(){
         return{
-            total_earning:0.00,
-            total_tax:0.00,
-            total:0.00,
-            type:''
+            valu: 0,
         }
     },
 
@@ -109,39 +106,12 @@ components: {
 
 methods:{
   calculate(){
-    this.total_earning =0.00
-    console.log(this.type)
-    if(!this.type || this.type=='') 
-      {
-        this.i("please select Montly or Yearly type")
-        return
-      }
-      this.total_tax = 0.00
-      let tax_percentage = 20
-    if(this.type=='Yearly'){
-      this.total_earning = total
+    console.log("hello",valu)
     
-    }
-    else{
-     
-      this.total_earning =( this.total *12)
+      
 
-    }
-    if(this.total_earning<=12570){
-      return
-    }
-    else if(this.total_earning>12570 && this.total_earning<60000){
-
-      tax_percentage =20
-
-    }
-    else {
-      tax_percentage =40
-    }
-
-    this.total_tax = (tax_percentage * (this.total_earning -12570))/100
    
-
+    
 
   },
  

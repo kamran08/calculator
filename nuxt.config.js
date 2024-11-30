@@ -63,9 +63,12 @@ export default {
   css: [
     'view-design/dist/styles/iview.css',
     // '@/assets/css/bootstrap.css',
+    '@/assets/css/bootstrap.css',
     '@/assets/css/common.css',
     '@/assets/css/main.css',
     '@/assets/css/responsive.css',
+    // '@/assets/css/owl.carousel.min.css',
+    // '@/assets/css/owl.theme.default.min.css',
   ],
   /*
   ** Plugins to load before mounting the App
