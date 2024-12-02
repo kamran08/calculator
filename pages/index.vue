@@ -4,38 +4,7 @@
   <!-- Banner -->
   <div class="_banner_con">
     <!-- Navbar -->
-    <nav id="navbar" class="_1nav">
-      <div class="row align-items-center">
-        <div class="col-6 col-md">
-          <a class="_1nav_logo" href="">
-            Cleaner
-          </a>
-        </div>
-
-        <div class="col-auto">
-          <ul class="_1nav_list">
-            <li>
-              <a class="_1nav_list_text _active" href="/">Home</a>
-            </li>
-            <li>
-              <a class="_1nav_list_text" href="/">Abouts Us</a>
-            </li>
-            <li>
-              <a class="_1nav_list_text" href="/services.html">Ours Servicesg</a>
-            </li>
-            <li>
-              <a class="_1nav_list_text" href="/single-blog.html">Contact Us</a>
-            </li>
-            <li>
-              <a class="_1nav_list_text" href="/single-blog.html">Pricing</a>
-            </li>
-          </ul>
-        </div>
-        <div class="col-auto">
-          <a class="_1nav_appi" href="blog.html"><i class='bx bxs-calendar'></i> Appointment</a>
-        </div>
-      </div>
-    </nav>
+    <Menu></Menu>
     <!-- Navbar -->
 
 
@@ -58,36 +27,36 @@
         <div class="_sponsor_slider_list">
           <!-- Items -->
           <div style="--position:1;" class="_sponsor_item">
-            <img class="_sponsor_img" src="assets/img/client-1.png" alt="" title="">
+            <img class="_sponsor_img" src="/client-1.png" alt="" title="">
           </div>
           <!-- Items -->
           <!-- Items -->
           <div style="--position:2;" class="_sponsor_item">
-            <img class="_sponsor_img" src="assets/img/client-2.png" alt="" title="">
+            <img class="_sponsor_img" src="/client-2.png" alt="" title="">
           </div>
           <!-- Items -->
           <!-- Items -->
           <div style="--position:3;" class="_sponsor_item">
-            <img class="_sponsor_img" src="assets/img/client-3.png" alt="" title="">
+            <img class="_sponsor_img" src="/client-3.png" alt="" title="">
           </div>
           <!-- Items -->
           <!-- Items -->
           <div style="--position:4;" class="_sponsor_item">
-            <img class="_sponsor_img" src="assets/img/client-4.png" alt="" title="">
+            <img class="_sponsor_img" src="/client-4.png" alt="" title="">
           </div>
           <!-- Items -->
           <!-- Items -->
           <div style="--position:5;" class="_sponsor_item">
-            <img class="_sponsor_img" src="assets/img/client-5.png" alt="" title="">
+            <img class="_sponsor_img" src="/client-5.png" alt="" title="">
           </div>
           <!-- Items -->
           <!-- Items -->
           <div style="--position:6;" class="_sponsor_item">
-            <img class="_sponsor_img" src="assets/img/client-6.png" alt="" title="">
+            <img class="_sponsor_img" src="/client-6.png" alt="" title="">
           </div>
           <!-- Items -->
           <div style="--position:7;" class="_sponsor_item">
-            <img class="_sponsor_img" src="assets/img/client-7.png" alt="" title="">
+            <img class="_sponsor_img" src="/client-7.png" alt="" title="">
           </div>
           <!-- Items -->
         </div>
@@ -141,7 +110,7 @@
           </div>
           <div class="col-12 col-md">
             <div class="_why_pic">
-              <img class="_why_img" src="assets/img/baby3.png" alt="" title="">
+              <img class="_why_img" src="/baby3.png" alt="" title="">
             </div>
           </div>
           <div class="col-12 col-md-3">
@@ -196,7 +165,7 @@
                 <span><i class='bx bx-play'></i></span>
                 <p>About Company</p>
               </div>
-              <img src="assets/img/pexels-fotoaibe-1571468.jpg" alt="" title="">
+              <img src="/pexels-fotoaibe-1571468.jpg" alt="" title="">
              </div>
           </div>
         </div>
@@ -206,12 +175,12 @@
               <div class="row">
                 <div class="col-6">
                   <div class="_about_pic">
-                    <img src="assets/img/pexels-cottonbro-4107107.jpg" alt="" title="">
+                    <img src="/pexels-cottonbro-4107107.jpg" alt="" title="">
                   </div>
                 </div>
                 <div class="col-6">
                   <div class="_about_pic">
-                    <img src="assets/img/pexels-cottonbro-4108983.jpg" alt="" title="">
+                    <img src="/pexels-cottonbro-4108983.jpg" alt="" title="">
                   </div>
                 </div>
               </div>
@@ -259,35 +228,115 @@
     <h1 class="_1title">Our Services</h1>
     <div class="_services_main">
       <div class="container">
-        <div class="owl-carousel owl-carousel-services _services_slider">
-          <!-- Items -->
-          <a href="single-service.html" class="_services_card">
-            <h2 class="_services_title">Tile and Grout</h2>
-            <p class="_services_text">Iste natus error sit voluptatem totam rem aperiam, eaque ipsa quae.</p>
-            <div class="_services_pic">
-              <img class="_services_img" src="assets/img/pexels-karolina-grabowska-4239091.jpg" alt="" title="">
-            </div>
-          </a>
-          <!-- Items -->
-          <!-- Items -->
-          <a href="single-service.html" class="_services_card">
-            <h2 class="_services_title">Laundry</h2>
-            <p class="_services_text">Iste natus error sit voluptatem totam rem aperiam, eaque ipsa quae.</p>
-            <div class="_services_pic">
-              <img class="_services_img" src="assets/img/pexels-cottonbro-4107120.jpg" alt="" title="">
-            </div>
-          </a>
-          <!-- Items -->
-          <!-- Items -->
-          <a href="single-service.html" class="_services_card">
-            <h2 class="_services_title">Carpet</h2>
-            <p class="_services_text">Iste natus error sit voluptatem totam rem aperiam, eaque ipsa quae.</p>
-            <div class="_services_pic">
-              <img class="_services_img" src="assets/img/pexels-pixabay-209271.jpg" alt="" title="">
-            </div>
-          </a>
-          <!-- Items -->
-        </div>
+        <Carousel 
+              class="_services_slider" 
+              :items = 5
+              :autoplay = "false" 
+              :nav = "false"
+              :dots = "true"
+              :loop = "true"
+              :margin = "30"
+              :autoplaySpeed = "true"
+              :autoplayTimeout = "5000"
+              :responsive = "{
+                    0:{items:1},576:{items:2},768:{items:2},1200:{items:4},1500:{items:5}
+              }"
+              responsivebaseelement="body"
+            >
+              <CarouselItem>
+                <div class="row">
+                  <div class="col-12 col-md-4">
+                    <a href="single-service.html" class="_services_card">
+                      <h2 class="_services_title">Tile and Grout</h2>
+                      <p class="_services_text">Iste natus error sit voluptatem totam rem aperiam, eaque ipsa quae.</p>
+                      <div class="_services_pic">
+                        <img class="_services_img" src="/pexels-karolina-grabowska-4239091.jpg" alt="" title="">
+                      </div>
+                    </a>
+                  </div>
+                  <div class="col-12 col-md-4">
+                    <a href="single-service.html" class="_services_card">
+                      <h2 class="_services_title">Laundry</h2>
+                      <p class="_services_text">Iste natus error sit voluptatem totam rem aperiam, eaque ipsa quae.</p>
+                      <div class="_services_pic">
+                        <img class="_services_img" src="/pexels-cottonbro-4107120.jpg" alt="" title="">
+                      </div>
+                    </a>
+                  </div>
+                  <div class="col-12 col-md-4">
+                    <a href="single-service.html" class="_services_card">
+                      <h2 class="_services_title">Carpet</h2>
+                      <p class="_services_text">Iste natus error sit voluptatem totam rem aperiam, eaque ipsa quae.</p>
+                      <div class="_services_pic">
+                        <img class="_services_img" src="/pexels-pixabay-209271.jpg" alt="" title="">
+                      </div>
+                    </a>
+                  </div>
+                </div>
+              </CarouselItem>
+              <CarouselItem>
+                <div class="row">
+                  <div class="col-12 col-md-4">
+                    <a href="single-service.html" class="_services_card">
+                      <h2 class="_services_title">Tile and Grout</h2>
+                      <p class="_services_text">Iste natus error sit voluptatem totam rem aperiam, eaque ipsa quae.</p>
+                      <div class="_services_pic">
+                        <img class="_services_img" src="/pexels-karolina-grabowska-4239091.jpg" alt="" title="">
+                      </div>
+                    </a>
+                  </div>
+                  <div class="col-12 col-md-4">
+                    <a href="single-service.html" class="_services_card">
+                      <h2 class="_services_title">Laundry</h2>
+                      <p class="_services_text">Iste natus error sit voluptatem totam rem aperiam, eaque ipsa quae.</p>
+                      <div class="_services_pic">
+                        <img class="_services_img" src="/pexels-cottonbro-4107120.jpg" alt="" title="">
+                      </div>
+                    </a>
+                  </div>
+                  <div class="col-12 col-md-4">
+                    <a href="single-service.html" class="_services_card">
+                      <h2 class="_services_title">Carpet</h2>
+                      <p class="_services_text">Iste natus error sit voluptatem totam rem aperiam, eaque ipsa quae.</p>
+                      <div class="_services_pic">
+                        <img class="_services_img" src="/pexels-pixabay-209271.jpg" alt="" title="">
+                      </div>
+                    </a>
+                  </div>
+                </div>
+              </CarouselItem>
+              <CarouselItem>
+                <div class="row">
+                  <div class="col-12 col-md-4">
+                    <a href="single-service.html" class="_services_card">
+                      <h2 class="_services_title">Tile and Grout</h2>
+                      <p class="_services_text">Iste natus error sit voluptatem totam rem aperiam, eaque ipsa quae.</p>
+                      <div class="_services_pic">
+                        <img class="_services_img" src="/pexels-karolina-grabowska-4239091.jpg" alt="" title="">
+                      </div>
+                    </a>
+                  </div>
+                  <div class="col-12 col-md-4">
+                    <a href="single-service.html" class="_services_card">
+                      <h2 class="_services_title">Laundry</h2>
+                      <p class="_services_text">Iste natus error sit voluptatem totam rem aperiam, eaque ipsa quae.</p>
+                      <div class="_services_pic">
+                        <img class="_services_img" src="/pexels-cottonbro-4107120.jpg" alt="" title="">
+                      </div>
+                    </a>
+                  </div>
+                  <div class="col-12 col-md-4">
+                    <a href="single-service.html" class="_services_card">
+                      <h2 class="_services_title">Carpet</h2>
+                      <p class="_services_text">Iste natus error sit voluptatem totam rem aperiam, eaque ipsa quae.</p>
+                      <div class="_services_pic">
+                        <img class="_services_img" src="/pexels-pixabay-209271.jpg" alt="" title="">
+                      </div>
+                    </a>
+                  </div>
+                </div>
+              </CarouselItem>
+        </Carousel>
       </div>
     </div>
   </div>
@@ -427,89 +476,276 @@
     <div class="container">
       <h1 class="_1title">What Our Clients Think</h1>
 
-      <div class="owl-carousel-feedback owl-carousel _feedback_slider">
-        <!-- Item -->
-        <div class="_feedBack_card">
-          <div class="inner-box">
-              <div class="_feedBack_card_img">
-                <img src="assets/img/pexels-pixabay-209271.jpg" alt="">
-              </div>
-                <div class="_feedBack_card_content">
-                  <div class="_feedBack_card_quote">
-                    <i class='bx bxs-quote-alt-right' ></i>
+      <Carousel 
+              class="_feedback_slider" 
+              loop
+              :autoplay="setting.autoplay"
+              :autoplay-speed="setting.autoplaySpeed"
+              :dots="setting.dots"
+              :radius-dot="setting.radiusDot"
+              :trigger="setting.trigger"
+              :arrow="setting.arrow"
+            >
+              <CarouselItem>
+                <div class="row">
+                  <div class="col-12 col-md-4 col-lg-4">
+                    <div class="_feedBack_card">
+                    <div class="inner-box">
+                        <div class="_feedBack_card_img">
+                          <img src="/pexels-pixabay-209271.jpg" alt="">
+                        </div>
+                          <div class="_feedBack_card_content">
+                            <div class="_feedBack_card_quote">
+                              <i class='bx bxs-quote-alt-right' ></i>
+                            </div>
+                            <h3 class="_feedBack_card_name">
+                              andrew Zachery
+                            </h3>
+                            <div class="_rating">
+                              <span class="_active"><i class='bx bxs-star'></i></span>
+                              <span class="_active"><i class='bx bxs-star'></i></span>
+                              <span class="_active"><i class='bx bxs-star'></i></span>
+                              <span class="_active"><i class='bx bxs-star'></i></span>
+                              <span class=""><i class='bx bxs-star'></i></span>
+                            </div>
+                            <p class="_feedBack_text">
+                              “Exceptional! They did a wonder-ful job, and my home smelled so nice. Now I can't imagine being without them!”
+                            </p>
+                          </div>
+                      </div>
+                    </div>
                   </div>
-                  <h3 class="_feedBack_card_name">
-                    andrew Zachery
-                  </h3>
-                  <div class="_rating">
-                    <span class="_active"><i class='bx bxs-star'></i></span>
-                    <span class="_active"><i class='bx bxs-star'></i></span>
-                    <span class="_active"><i class='bx bxs-star'></i></span>
-                    <span class="_active"><i class='bx bxs-star'></i></span>
-                    <span class=""><i class='bx bxs-star'></i></span>
+                  <div class="col-12 col-md-4 col-lg-4">
+                    <div class="_feedBack_card">
+                  <div class="inner-box">
+                      <div class="_feedBack_card_img">
+                        <img src="/pexels-fotoaibe-1571468.jpg" alt="">
+                      </div>
+                        <div class="_feedBack_card_content">
+                          <div class="_feedBack_card_quote">
+                            <i class='bx bxs-quote-alt-right' ></i>
+                          </div>
+                          <h3 class="_feedBack_card_name">
+                            andrew Zachery
+                          </h3>
+                          <div class="_rating">
+                            <span class="_active"><i class='bx bxs-star'></i></span>
+                            <span class="_active"><i class='bx bxs-star'></i></span>
+                            <span class="_active"><i class='bx bxs-star'></i></span>
+                            <span class="_active"><i class='bx bxs-star'></i></span>
+                            <span class=""><i class='bx bxs-star'></i></span>
+                          </div>
+                          <p class="_feedBack_text">
+                            “Exceptional! They did a wonder-ful job, and my home smelled so nice. Now I can't imagine being without them!”
+                          </p>
+                        </div>
+                    </div>
+                    </div>
                   </div>
-                  <p class="_feedBack_text">
-                    “Exceptional! They did a wonder-ful job, and my home smelled so nice. Now I can't imagine being without them!”
-                  </p>
+                  <div class="col-12 col-md-4 col-lg-4">
+                    <div class="_feedBack_card">
+                  <div class="inner-box">
+                      <div class="_feedBack_card_img">
+                        <img src="/pexels-cottonbro-4107107.jpg" alt="">
+                      </div>
+                        <div class="_feedBack_card_content">
+                          <div class="_feedBack_card_quote">
+                            <i class='bx bxs-quote-alt-right' ></i>
+                          </div>
+                          <h3 class="_feedBack_card_name">
+                            andrew Zachery
+                          </h3>
+                          <div class="_rating">
+                            <span class="_active"><i class='bx bxs-star'></i></span>
+                            <span class="_active"><i class='bx bxs-star'></i></span>
+                            <span class="_active"><i class='bx bxs-star'></i></span>
+                            <span class="_active"><i class='bx bxs-star'></i></span>
+                            <span class=""><i class='bx bxs-star'></i></span>
+                          </div>
+                          <p class="_feedBack_text">
+                            “Exceptional! They did a wonder-ful job, and my home smelled so nice. Now I can't imagine being without them!”
+                          </p>
+                        </div>
+                    </div>
+                    </div>
+                  </div>
                 </div>
-            </div>
-        </div>
-        <!-- Item -->
-        <!-- Item -->
-        <div class="_feedBack_card">
-          <div class="inner-box">
-              <div class="_feedBack_card_img">
-                <img src="assets/img/pexels-fotoaibe-1571468.jpg" alt="">
-              </div>
-                <div class="_feedBack_card_content">
-                  <div class="_feedBack_card_quote">
-                    <i class='bx bxs-quote-alt-right' ></i>
+                
+              </CarouselItem>
+              <CarouselItem>
+                <div class="row">
+                  <div class="col-12 col-md-4 col-lg-4">
+                    <div class="_feedBack_card">
+                    <div class="inner-box">
+                        <div class="_feedBack_card_img">
+                          <img src="/pexels-pixabay-209271.jpg" alt="">
+                        </div>
+                          <div class="_feedBack_card_content">
+                            <div class="_feedBack_card_quote">
+                              <i class='bx bxs-quote-alt-right' ></i>
+                            </div>
+                            <h3 class="_feedBack_card_name">
+                              andrew Zachery
+                            </h3>
+                            <div class="_rating">
+                              <span class="_active"><i class='bx bxs-star'></i></span>
+                              <span class="_active"><i class='bx bxs-star'></i></span>
+                              <span class="_active"><i class='bx bxs-star'></i></span>
+                              <span class="_active"><i class='bx bxs-star'></i></span>
+                              <span class=""><i class='bx bxs-star'></i></span>
+                            </div>
+                            <p class="_feedBack_text">
+                              “Exceptional! They did a wonder-ful job, and my home smelled so nice. Now I can't imagine being without them!”
+                            </p>
+                          </div>
+                      </div>
+                    </div>
                   </div>
-                  <h3 class="_feedBack_card_name">
-                    andrew Zachery
-                  </h3>
-                  <div class="_rating">
-                    <span class="_active"><i class='bx bxs-star'></i></span>
-                    <span class="_active"><i class='bx bxs-star'></i></span>
-                    <span class="_active"><i class='bx bxs-star'></i></span>
-                    <span class="_active"><i class='bx bxs-star'></i></span>
-                    <span class=""><i class='bx bxs-star'></i></span>
+                  <div class="col-12 col-md-4 col-lg-4">
+                    <div class="_feedBack_card">
+                  <div class="inner-box">
+                      <div class="_feedBack_card_img">
+                        <img src="/pexels-fotoaibe-1571468.jpg" alt="">
+                      </div>
+                        <div class="_feedBack_card_content">
+                          <div class="_feedBack_card_quote">
+                            <i class='bx bxs-quote-alt-right' ></i>
+                          </div>
+                          <h3 class="_feedBack_card_name">
+                            andrew Zachery
+                          </h3>
+                          <div class="_rating">
+                            <span class="_active"><i class='bx bxs-star'></i></span>
+                            <span class="_active"><i class='bx bxs-star'></i></span>
+                            <span class="_active"><i class='bx bxs-star'></i></span>
+                            <span class="_active"><i class='bx bxs-star'></i></span>
+                            <span class=""><i class='bx bxs-star'></i></span>
+                          </div>
+                          <p class="_feedBack_text">
+                            “Exceptional! They did a wonder-ful job, and my home smelled so nice. Now I can't imagine being without them!”
+                          </p>
+                        </div>
+                    </div>
+                    </div>
                   </div>
-                  <p class="_feedBack_text">
-                    “Exceptional! They did a wonder-ful job, and my home smelled so nice. Now I can't imagine being without them!”
-                  </p>
+                  <div class="col-12 col-md-4 col-lg-4">
+                    <div class="_feedBack_card">
+                  <div class="inner-box">
+                      <div class="_feedBack_card_img">
+                        <img src="/pexels-cottonbro-4107107.jpg" alt="">
+                      </div>
+                        <div class="_feedBack_card_content">
+                          <div class="_feedBack_card_quote">
+                            <i class='bx bxs-quote-alt-right' ></i>
+                          </div>
+                          <h3 class="_feedBack_card_name">
+                            andrew Zachery
+                          </h3>
+                          <div class="_rating">
+                            <span class="_active"><i class='bx bxs-star'></i></span>
+                            <span class="_active"><i class='bx bxs-star'></i></span>
+                            <span class="_active"><i class='bx bxs-star'></i></span>
+                            <span class="_active"><i class='bx bxs-star'></i></span>
+                            <span class=""><i class='bx bxs-star'></i></span>
+                          </div>
+                          <p class="_feedBack_text">
+                            “Exceptional! They did a wonder-ful job, and my home smelled so nice. Now I can't imagine being without them!”
+                          </p>
+                        </div>
+                    </div>
+                    </div>
+                  </div>
                 </div>
-            </div>
-        </div>
-        <!-- Item -->
-        <!-- Item -->
-        <div class="_feedBack_card">
-          <div class="inner-box">
-              <div class="_feedBack_card_img">
-                <img src="assets/img/pexels-cottonbro-4107107.jpg" alt="">
-              </div>
-                <div class="_feedBack_card_content">
-                  <div class="_feedBack_card_quote">
-                    <i class='bx bxs-quote-alt-right' ></i>
+                
+              </CarouselItem>
+              <CarouselItem>
+                <div class="row">
+                  <div class="col-12 col-md-4 col-lg-4">
+                    <div class="_feedBack_card">
+                    <div class="inner-box">
+                        <div class="_feedBack_card_img">
+                          <img src="/pexels-pixabay-209271.jpg" alt="">
+                        </div>
+                          <div class="_feedBack_card_content">
+                            <div class="_feedBack_card_quote">
+                              <i class='bx bxs-quote-alt-right' ></i>
+                            </div>
+                            <h3 class="_feedBack_card_name">
+                              andrew Zachery
+                            </h3>
+                            <div class="_rating">
+                              <span class="_active"><i class='bx bxs-star'></i></span>
+                              <span class="_active"><i class='bx bxs-star'></i></span>
+                              <span class="_active"><i class='bx bxs-star'></i></span>
+                              <span class="_active"><i class='bx bxs-star'></i></span>
+                              <span class=""><i class='bx bxs-star'></i></span>
+                            </div>
+                            <p class="_feedBack_text">
+                              “Exceptional! They did a wonder-ful job, and my home smelled so nice. Now I can't imagine being without them!”
+                            </p>
+                          </div>
+                      </div>
+                    </div>
                   </div>
-                  <h3 class="_feedBack_card_name">
-                    andrew Zachery
-                  </h3>
-                  <div class="_rating">
-                    <span class="_active"><i class='bx bxs-star'></i></span>
-                    <span class="_active"><i class='bx bxs-star'></i></span>
-                    <span class="_active"><i class='bx bxs-star'></i></span>
-                    <span class="_active"><i class='bx bxs-star'></i></span>
-                    <span class=""><i class='bx bxs-star'></i></span>
+                  <div class="col-12 col-md-4 col-lg-4">
+                    <div class="_feedBack_card">
+                  <div class="inner-box">
+                      <div class="_feedBack_card_img">
+                        <img src="/pexels-fotoaibe-1571468.jpg" alt="">
+                      </div>
+                        <div class="_feedBack_card_content">
+                          <div class="_feedBack_card_quote">
+                            <i class='bx bxs-quote-alt-right' ></i>
+                          </div>
+                          <h3 class="_feedBack_card_name">
+                            andrew Zachery
+                          </h3>
+                          <div class="_rating">
+                            <span class="_active"><i class='bx bxs-star'></i></span>
+                            <span class="_active"><i class='bx bxs-star'></i></span>
+                            <span class="_active"><i class='bx bxs-star'></i></span>
+                            <span class="_active"><i class='bx bxs-star'></i></span>
+                            <span class=""><i class='bx bxs-star'></i></span>
+                          </div>
+                          <p class="_feedBack_text">
+                            “Exceptional! They did a wonder-ful job, and my home smelled so nice. Now I can't imagine being without them!”
+                          </p>
+                        </div>
+                    </div>
+                    </div>
                   </div>
-                  <p class="_feedBack_text">
-                    “Exceptional! They did a wonder-ful job, and my home smelled so nice. Now I can't imagine being without them!”
-                  </p>
+                  <div class="col-12 col-md-4 col-lg-4">
+                    <div class="_feedBack_card">
+                  <div class="inner-box">
+                      <div class="_feedBack_card_img">
+                        <img src="/pexels-cottonbro-4107107.jpg" alt="">
+                      </div>
+                        <div class="_feedBack_card_content">
+                          <div class="_feedBack_card_quote">
+                            <i class='bx bxs-quote-alt-right' ></i>
+                          </div>
+                          <h3 class="_feedBack_card_name">
+                            andrew Zachery
+                          </h3>
+                          <div class="_rating">
+                            <span class="_active"><i class='bx bxs-star'></i></span>
+                            <span class="_active"><i class='bx bxs-star'></i></span>
+                            <span class="_active"><i class='bx bxs-star'></i></span>
+                            <span class="_active"><i class='bx bxs-star'></i></span>
+                            <span class=""><i class='bx bxs-star'></i></span>
+                          </div>
+                          <p class="_feedBack_text">
+                            “Exceptional! They did a wonder-ful job, and my home smelled so nice. Now I can't imagine being without them!”
+                          </p>
+                        </div>
+                    </div>
+                    </div>
+                  </div>
                 </div>
-            </div>
-        </div>
-        <!-- Item -->
-      </div>
+                
+              </CarouselItem>
+      </Carousel>
+
     </div>
   </div>
   <!-- Feedback -->
@@ -533,7 +769,7 @@
               </ul>
               <div class="_homeBlog_card_pic">
                 <div class="_homeBlog_card_date"><span>21</span>m<br>a<br>y</div>
-                <img class="_homeBlog_card_img" src="assets/img/image_02.jpg" alt="">
+                <img class="_homeBlog_card_img" src="/image_02.jpg" alt="">
               </div>
               <div class="_homeBlog_card_con">
                 <p class="_homeBlog_card_name"><span><i class='bx bxs-user'></i></span> By Admin</p>
@@ -552,7 +788,7 @@
               </ul>
               <div class="_homeBlog_card_pic">
                 <div class="_homeBlog_card_date"><span>21</span>m<br>a<br>y</div>
-                <img class="_homeBlog_card_img" src="assets/img/pexels-cottonbro-4107107.jpg" alt="">
+                <img class="_homeBlog_card_img" src="/pexels-cottonbro-4107107.jpg" alt="">
               </div>
               <div class="_homeBlog_card_con">
                 <p class="_homeBlog_card_name"><span><i class='bx bxs-user'></i></span> By Admin</p>
@@ -570,7 +806,7 @@
               </ul>
               <div class="_homeBlog_card_pic">
                 <div class="_homeBlog_card_date"><span>21</span>m<br>a<br>y</div>
-                <img class="_homeBlog_card_img" src="assets/img/pexels-pixabay-209271.jpg" alt="">
+                <img class="_homeBlog_card_img" src="/pexels-pixabay-209271.jpg" alt="">
               </div>
               <div class="_homeBlog_card_con">
                 <p class="_homeBlog_card_name"><span><i class='bx bxs-user'></i></span> By Admin</p>
@@ -663,101 +899,41 @@
   <!-- Pricing -->
 
   <!-- Footer -->
-  <footer class="_footer">
-    <div class="container">
-      <div class="row">
-          <div class="col-lg-6 col-md-12 col-sm-12">
-            <div class="row">
-              <div class="col-md-7 col-sm-6 col-12">
-                  <div class="_footer_we">
-                    <h2 class="_footer_we_title">Who we are</h2>
-                    <p class="_footer_we_text">
-                      Beatae vitae dicta sunt explicabo nemo enim ipsam voluptatem quia voluptas sit aspernatur
-                       aut odit aut fugit, sed quia consequuntur.
-                    </p>
-                  </div>
-              </div>
-              
-              <div class="col-md-5 col-sm-6">
-                  <div class="_footer_list">
-                    <h2 class="_footer_list_title">Services</h2>
-                    <ul class="_footer_list_ul">
-                      <li><a href="#">Carpet Cleaning</a></li>
-                      <li><a href="#">Tile and Grout</a></li>
-                      <li><a href="#">Housekeeping</a></li>
-                      <li><a href="#">Window Cleaning</a></li>
-                      <li><a href="#">Pool Cleaning</a></li>
-                    </ul>
-                  </div>
-              </div>
-            </div>
-          </div>
-          
-          <div class="col-lg-6 col-md-12 col-sm-12">
-              <div class="row">
-                  <div class="col-md-6 col-sm-6">
-                    <div class="_footer_list">
-                      <h2 class="_footer_list_title">Pages</h2>
-                      <ul class="_footer_list_ul">
-                        <li><a href="#">About Us</a></li>
-                        <li><a href="#">Testimonial</a></li>
-                        <li><a href="#">Housekeeping</a></li>
-                        <li><a href="#">Faqs</a></li>
-                        <li><a href="#">Contact Us</a></li>
-                      </ul>
-                    </div>
-                  </div>
-                  <div class="col-md-6 col-sm-6">
-                      <div class="_footer_info_con">
-                        <h2 class="_footer_info_num">+88 01790302229</h2>
-                        <ul class="_footer_info_email">
-                          <li>info@cleaning.com</li>
-                          <li>7DU CGE Green Road, London, United Kindon</li>
-                        </ul>
-
-                        <ul class="_footer_socail">
-                          <li><a href="#"><i class='bx bxl-facebook'></i></a></li>
-                          <li><a href="#"><i class='bx bxl-youtube' ></i></a></li>
-                          <li><a href="#"><i class='bx bxl-twitter' ></i></a></li>
-                          <li><a href="#"><i class='bx bxl-instagram' ></i></a></li>
-                        </ul>
-                      </div>
-                  </div>
-              </div>
-          </div>
-          
-      </div>
-
-      <p class="_footer_copy">
-        © 2024 All rights reserved by Hussain Shipu, 
-        By cleaning company.
-      </p>
-    </div>
-  </footer>
+  
 
      
 
       <!-- Footer -->
-       <mainFooter/>
+       <Footer></Footer>
       <!-- Footer -->
   </div>
 </template>
 
 <script>
-import mainMenu from "~/components/main/menu.vue";
-import mainFooter from "~/components/main/footer.vue";
+import Menu from "~/components/menu.vue";
+import Footer from "~/components/footer.vue";
+// import carousel from './vue-owl-carousel2';
 // import carousel from 'vue-owl-carousel'
 
 export default {
       data(){
         return{
             valu: 0,
+            setting: {
+              // autoplay: true,
+              autoplaySpeed: 2000,
+              // dots: 'true',
+              // radiusDot: false,
+              trigger: 'click',
+              arrow: 'never'
+            },
         }
     },
 
 components: {
-  mainMenu,
-  mainFooter,
+  Menu,
+  Footer,
+  // carousel
 },
 
 

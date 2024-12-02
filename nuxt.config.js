@@ -30,11 +30,15 @@ export default {
     },
     {
       rel: 'stylesheet',
-      href: "https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      href: "https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
     },
     {
       rel: 'stylesheet',
       href: "https://use.fontawesome.com/releases/v5.8.2/css/all.css"
+    },
+    {
+      rel: 'stylesheet',
+      href: "https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
     },
     {
       rel: 'preconnect',
@@ -46,11 +50,19 @@ export default {
     },
     {
       rel: 'stylesheet',
-      href: "https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap"
+      href: "https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap"
     },
     {
       rel: 'stylesheet',
-      href: "https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap"
+      href: "https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap"
+    },
+    {
+      rel: 'stylesheet',
+      href: "https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap"
+    },
+    {
+      rel: 'stylesheet',
+      href: "https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;0,1000;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap"
     },
   ],
   script: [
@@ -61,9 +73,8 @@ export default {
   ** Global CSS
   */
   css: [
+    // 'http://unpkg.com/view-design/dist/styles/iview.css',
     'view-design/dist/styles/iview.css',
-    // '@/assets/css/bootstrap.css',
-    '@/assets/css/bootstrap.css',
     '@/assets/css/common.css',
     '@/assets/css/main.css',
     '@/assets/css/responsive.css',

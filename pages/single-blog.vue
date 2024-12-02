@@ -1,64 +1,7 @@
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Cleaner</title>
-  <!-- bootstrap -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-  <!-- Icons -->
-  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-  <!-- google fonts -->
-  <!-- <link href="https://fonts.googleapis.com/css?family=Poppins:500,600,700,900&display=swap" rel="stylesheet"> -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
-
-  <!-- Owl Carosel -->
-  <link rel="stylesheet" href="assets/css/owl.carousel.min.css">
-  <link rel="stylesheet" href="assets/css/owl.theme.default.min.css">
-
-  <!-- css -->
-  <link rel="stylesheet" href="assets/css/common.css">
-  <link rel="stylesheet" href="assets/css/main.css">
-</head>
-
-<body>
+<template>
+    <div>
     <!-- Navbar -->
-    <nav class="_1nav _nav_fixed">
-        <div class="row align-items-center">
-            <div class="col-6 col-md">
-                <a class="_1nav_logo" href="index.html">
-                    Cleaner
-                </a>
-            </div>
-        
-            <div class="col-auto">
-                <ul class="_1nav_list">
-                    <li>
-                        <a class="_1nav_list_text _active" href="index.html">Home</a>
-                    </li>
-                    <li>
-                        <a class="_1nav_list_text" href="about.html">Abouts Us</a>
-                    </li>
-                    <li>
-                        <a class="_1nav_list_text" href="services.html">Ours Services</a>
-                    </li>
-                    <li>
-                        <a class="_1nav_list_text" href="blog.html">Blogs</a>
-                    </li>
-                    <li>
-                        <a class="_1nav_list_text" href="contact.html">Contact Us</a>
-                    </li>
-                </ul>
-            </div>
-            <div class="col-auto">
-                <a class="_1nav_appi" href="/book.html"><i class='bx bxs-calendar'></i> Appointment</a>
-            </div>
-        </div>
-    </nav>
+    <Menu></Menu>
     <!-- Navbar -->
 
     <!-- Single blog -->
@@ -80,7 +23,7 @@
                     <div class="col-sm-8 col-xs-12 blog-area">
                         <div class="blog-warp-1 blog_warp_lay_1">
                             <div class="blog_imgg">
-                                <img src="assets/img/pexels-fotoaibe-1571468.jpg" alt="">
+                                <img src="/pexels-fotoaibe-1571468.jpg" alt="">
                             </div>
                             <div class="blog_content_warp">
                                 <h5>Lorem Ipsum is simply dummy text ofthe anadthe</h5>
@@ -104,7 +47,7 @@
                             <ul class="comments">
                                 <li>
                                     <div class="comment">
-                                        <img src="assets/img/user.png" alt="" class="comment-avatar">
+                                        <img src="/user.png" alt="" class="comment-avatar">
                                         <strong class="commenter-title"><a href="#">John Doe</a></strong>
                                         <span class="comment-date">27 Jan 2015</span>
                                         <p>Lorem ipsum dolor sit amet, in urna molestie tristique. A fermentum sed at, facilisis lacinia aliquam fusce wisi, porta ligula nibh vel congue diam. Sed ligula erat molestie cras morbi in, facilisis eu elit, ac suscipit pellentesque, praesent fringilla sit elit amet in suspendisse</p>
@@ -114,7 +57,7 @@
                                     <ul>
                                         <li>
                                             <div class="comment">
-                                                <img src="assets/img/user.png" alt="" class="comment-avatar">
+                                                <img src="/user.png" alt="" class="comment-avatar">
                                                 <strong class="commenter-title"><a href="#">John Doe</a></strong>
                                                 <span class="comment-date">27 June 2016</span>
                                                 <p>Lorem ipsum dolor sit amet, in urna molestie tristique. A fermentum sed at, facilisis lacinia aliquam fusce wisi, porta ligula nibh vel congue diam. Sed ligula erat molestie cras morbi in, facilisis eu elit, ac suscipit pellentesque, praesent fringilla sit elit amet in suspendisse</p>
@@ -228,27 +171,27 @@
                             <div class="instagram-item">
                                 <ul class="instagram-photo-list">
                                     <li>
-                                        <a href="#"><img alt="" class="img-responsive" src="assets/img/image_02.jpg">
+                                        <a href="#"><img alt="" class="img-responsive" src="/image_02.jpg">
                                         </a>
                                     </li>
                                     <li>
-                                        <a href="#"><img alt="" class="img-responsive" src="assets/img/pexels-cottonbro-4107107.jpg">
+                                        <a href="#"><img alt="" class="img-responsive" src="/pexels-cottonbro-4107107.jpg">
                                         </a>
                                     </li>
                                     <li>
-                                        <a href="#"><img alt="" class="img-responsive" src="assets/img/pexels-pixabay-209271.jpg">
+                                        <a href="#"><img alt="" class="img-responsive" src="/pexels-pixabay-209271.jpg">
                                         </a>
                                     </li>
                                     <li>
-                                        <a href="#"><img alt="" class="img-responsive" src="assets/img/baby3.png">
+                                        <a href="#"><img alt="" class="img-responsive" src="/baby3.png">
                                         </a>
                                     </li>
                                     <li>
-                                        <a href="#"><img alt="" class="img-responsive" src="assets/img/pexels-cottonbro-4107120.jpg">
+                                        <a href="#"><img alt="" class="img-responsive" src="/pexels-cottonbro-4107120.jpg">
                                         </a>
                                     </li>								
                                     <li>
-                                        <a href="#"><img alt="" class="img-responsive" src="assets/img/pexels-karolina-grabowska-4239091.jpg">
+                                        <a href="#"><img alt="" class="img-responsive" src="/pexels-karolina-grabowska-4239091.jpg">
                                         </a>
                                     </li>
                                 </ul>
@@ -271,78 +214,36 @@
     <!-- Single blog -->
 
     <!-- Footer -->
-    <footer class="_footer">
-        <div class="container">
-        <div class="row">
-            <div class="col-lg-6 col-md-12 col-sm-12">
-                <div class="row">
-                <div class="col-md-7 col-sm-6 col-12">
-                    <div class="_footer_we">
-                        <h2 class="_footer_we_title">Who we are</h2>
-                        <p class="_footer_we_text">
-                        Beatae vitae dicta sunt explicabo nemo enim ipsam voluptatem quia voluptas sit aspernatur
-                        aut odit aut fugit, sed quia consequuntur.
-                        </p>
-                    </div>
-                </div>
-                
-                <div class="col-md-5 col-sm-6">
-                    <div class="_footer_list">
-                        <h2 class="_footer_list_title">Services</h2>
-                        <ul class="_footer_list_ul">
-                        <li><a href="#">Carpet Cleaning</a></li>
-                        <li><a href="#">Tile and Grout</a></li>
-                        <li><a href="#">Housekeeping</a></li>
-                        <li><a href="#">Window Cleaning</a></li>
-                        <li><a href="#">Pool Cleaning</a></li>
-                        </ul>
-                    </div>
-                </div>
-                </div>
-            </div>
-            
-            <div class="col-lg-6 col-md-12 col-sm-12">
-                <div class="row">
-                    <div class="col-md-6 col-sm-6">
-                        <div class="_footer_list">
-                        <h2 class="_footer_list_title">Pages</h2>
-                        <ul class="_footer_list_ul">
-                            <li><a href="#">About Us</a></li>
-                            <li><a href="#">Testimonial</a></li>
-                            <li><a href="#">Housekeeping</a></li>
-                            <li><a href="#">Faqs</a></li>
-                            <li><a href="#">Contact Us</a></li>
-                        </ul>
-                        </div>
-                    </div>
-                    <div class="col-md-6 col-sm-6">
-                        <div class="_footer_info_con">
-                            <h2 class="_footer_info_num">+88 01790302229</h2>
-                            <ul class="_footer_info_email">
-                            <li>info@cleaning.com</li>
-                            <li>7DU CGE Green Road, London, United Kindon</li>
-                            </ul>
-
-                            <ul class="_footer_socail">
-                            <li><a href="#"><i class='bx bxl-facebook'></i></a></li>
-                            <li><a href="#"><i class='bx bxl-youtube' ></i></a></li>
-                            <li><a href="#"><i class='bx bxl-twitter' ></i></a></li>
-                            <li><a href="#"><i class='bx bxl-instagram' ></i></a></li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            
-        </div>
-
-        <p class="_footer_copy">
-            © 2024 All rights reserved by Hussain Shipu, 
-            By cleaning company.
-        </p>
-        </div>
-    </footer>
+     <Footer></Footer>
     <!-- Footer -->
-</body>
+    </div>
+</template>
 
-</html>
+
+<script>
+import Menu from "~/components/menu.vue";
+import Footer from "~/components/footer.vue";
+// import carousel from './vue-owl-carousel2';
+// import carousel from 'vue-owl-carousel'
+
+export default {
+      data(){
+        return{
+        }
+    },
+
+components: {
+  Menu,
+  Footer,
+},
+
+
+
+methods:{
+},
+
+async created(){
+
+}
+}
+</script>

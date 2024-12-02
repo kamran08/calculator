@@ -23,21 +23,6 @@
 
 
 /*========= 1.Navber =========*/
-._1nav._nav_fixed {
-    background: var(--primary);
-    position: fixed;
-    top: 0;
-    border-bottom: none;
-    animation: menuAnimation .4s linear;
-}
-._1nav._nav_fixed{}
-@keyframes menuAnimation {
-    from{
-        top: -200px;
-    }to{
-        top: 0;
-    }
-}
 ._1nav{
     background: var(--primary);
     padding: 11px 34px;
@@ -52,6 +37,30 @@
     z-index: 1111;
     border-bottom: 1px solid #ffffff45;
     position: relative;
+    background: var(--primary);
+    position: fixed;
+    top: 0;
+    border-bottom: none;
+}
+._banner_con ._1nav{
+    background: none;
+    position: relative;
+    border-bottom: 1px solid #ffffff45;
+}
+._1nav._nav_fixed {
+    background: var(--primary);
+    position: fixed;
+    top: 0;
+    border-bottom: none;
+    animation: menuAnimation .4s linear;
+}
+._1nav._nav_fixed{}
+@keyframes menuAnimation {
+    from{
+        top: -200px;
+    }to{
+        top: 0;
+    }
 }
 ._1nav_logo{
     display: inline-block;
